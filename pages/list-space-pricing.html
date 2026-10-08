@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing &amp; Availability | SpaceShare</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/features/list-space-details.css">
+    <link rel="stylesheet" href="../css/features/list-space-pricing.css">
+</head>
+<body>
+    <header class="site-header listing-header pricing-header">
+        <div class="header-inner">
+            <a href="../index.html" class="brand" aria-label="SpaceShare home"><span class="brand-mark" aria-hidden="true"><span class="brand-square brand-square-dark"></span><span class="brand-square brand-square-orange"></span></span><span class="brand-name">SpaceShare</span></a>
+            <nav class="main-nav" aria-label="Main navigation"><a href="../index.html">Home</a><a href="#">Become a Host</a><a href="#">Explore Spaces</a><a href="#">How it works</a></nav>
+            <div class="header-actions"><a href="#" class="btn btn-outline">Log In</a><a href="#" class="btn btn-primary">List Your Spaces</a></div>
+        </div>
+    </header>
+    <main class="listing-page pricing-page">
+        <aside class="status-sidebar">
+            <h2>Status</h2>
+            <div class="status-badge"><span>60% Complete</span><img src="../assets/images/vectors/Vector-star.png" alt="" aria-hidden="true"></div>
+            <div class="support-illustration"><img src="../assets/images/image 85@3x.png" alt=""></div>
+            <section class="help-card" aria-labelledby="help-title"><h3 id="help-title">Stuck and need help?</h3><p>Our team is ready to guide you every step of the way</p><div class="help-divider"></div><div class="contact-row"><img src="../assets/images/vectors/Vector-phone.png" alt="" aria-hidden="true"><strong>Call Us</strong></div><div class="contact-details"><a href="tel:+23412345678">+234 1234 5678</a><span>8AM - 6PM</span></div><div class="contact-row live-chat"><img src="../assets/images/vectors/Vector-chat.png" alt="" aria-hidden="true"><strong>Live Chat</strong></div><button type="button" class="chat-button" id="chat-button">Start Chat</button></section>
+        </aside>
+        <section class="listing-content" aria-labelledby="page-title">
+            <div class="page-heading"><h1 id="page-title">Set your rate and opening hours</h1><p>You stay in control of what you earn and when your space is open.</p></div>
+            <section class="listing-progress" aria-label="Listing progress"><p class="step-count">Step 4 of 5 :</p><div class="progress-track" aria-label="Step 4 of 5"><div class="progress-line"></div><div class="progress-step completed"><span class="step-number">1</span><span class="step-label">Basics</span></div><div class="progress-step completed"><span class="step-number">2</span><span class="step-label">Details</span></div><div class="progress-step completed"><span class="step-number">3</span><span class="step-label">Photos</span></div><div class="progress-step active" aria-current="step"><span class="step-number">4</span><span class="step-label">Pricing &amp; Availability</span></div><div class="progress-step"><span class="step-number">5</span><span class="step-label">Review</span></div></div></section>
+            <form id="list-space-pricing-form" novalidate>
+                <div class="pricing-form-content">
+                <section class="pricing-section" aria-labelledby="rate-title"><h2 id="rate-title">Your rate</h2><p class="section-intro">How do you want to charge?</p>
+                    <div class="rate-toggle" role="group" aria-label="Pricing mode"><button type="button" data-rate="hourly" aria-pressed="true">Hourly</button><button type="button" data-rate="daily" aria-pressed="false">Daily</button></div>
+                    <label class="visually-hidden" for="price">Price in naira</label><div class="price-field"><span aria-hidden="true">₦</span><input id="price" name="price" type="number" min="1" step="any" value="15000" inputmode="decimal" aria-describedby="price-unit price-error"><strong id="price-unit">Per Hour</strong></div><p id="price-error" class="pricing-error" aria-live="polite"></p>
+                </section>
+                <section class="pricing-section availability-section" aria-labelledby="availability-title"><h2 id="availability-title">When are you open for booking?</h2><p class="section-intro">Only these days and hours can be booked</p>
+                    <fieldset class="hours-field"><legend>Opening hours</legend><div class="time-row"><label><span class="visually-hidden">Opening time</span><input id="open-time" type="time" value="08:00" required></label><span>to</span><label><span class="visually-hidden">Closing time</span><input id="close-time" type="time" value="19:00" required></label></div><p id="hours-error" class="pricing-error" aria-live="polite"></p></fieldset>
+                    <fieldset class="days-field"><legend>Days</legend><div class="day-options"><label><input type="checkbox" value="Sun"><span>Sun</span></label><label><input type="checkbox" value="Mon"><span>Mon</span></label><label><input type="checkbox" value="Tues"><span>Tues</span></label><label><input type="checkbox" value="Wed"><span>Wed</span></label><label><input type="checkbox" value="Thu"><span>Thu</span></label><label><input type="checkbox" value="Fri"><span>Fri</span></label><label><input type="checkbox" value="Sat"><span>Sat</span></label></div><p id="days-error" class="pricing-error" aria-live="polite"></p></fieldset>
+                </section>
+                <fieldset class="pricing-section booking-section"><legend>How should bookings work?</legend><div class="booking-options"><label class="booking-option"><input type="radio" name="booking-mode" value="instant"><span class="fake-radio" aria-hidden="true"></span><span><strong>Instant Booking</strong><small>Seekers book open slot straight away</small></span></label><label class="booking-option"><input type="radio" name="booking-mode" value="approval"><span class="fake-radio" aria-hidden="true"></span><span><strong>Approve each request</strong><small>You approve every booking before it is confirmed</small></span></label></div><p id="booking-error" class="pricing-error" aria-live="polite"></p></fieldset>
+                <section class="pricing-section blocked-section" aria-labelledby="blocked-title"><h2 id="blocked-title">Need a day off?</h2><p class="section-intro">Block dates when your space is unavailable</p><label class="visually-hidden" for="blocked-date">Choose a date to block</label><div class="blocked-controls"><input id="blocked-date" type="date"><button id="add-blocked-date" type="button">Add date</button></div><ul id="blocked-dates" class="blocked-list" aria-label="Blocked dates"></ul></section>
+                </div>
+                <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+                <div class="form-actions"><button type="button" class="back-button" id="back-button"><span aria-hidden="true">←</span> Back</button><button type="submit" class="continue-button">Save &amp; Continue</button></div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/features/list-space-pricing.js"></script>
+</body>
+</html>

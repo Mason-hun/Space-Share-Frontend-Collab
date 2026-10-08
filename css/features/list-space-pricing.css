@@ -1,0 +1,668 @@
+.pricing-header {
+    padding-top: 20px;
+}
+
+body:has(> .pricing-header) {
+    --listing-header-height: 90px;
+}
+
+.pricing-header .header-inner {
+    width: min(1185px, calc(100% - 64px));
+    min-height: 70px;
+    padding-bottom: 16px;
+    gap: 1.5rem;
+}
+
+.pricing-header .brand {
+    gap: 9px;
+    font-size: 17px;
+}
+
+.pricing-header .brand-mark {
+    width: 28px;
+    height: 28px;
+}
+
+.pricing-header .brand-square {
+    width: 16px;
+    height: 16px;
+    border-width: 3px;
+}
+
+.pricing-header .main-nav {
+    gap: clamp(1.25rem, 2.4vw, 2.5rem);
+}
+
+.pricing-header .main-nav a {
+    font-size: 14px;
+}
+
+.pricing-header .header-actions {
+    gap: 12px;
+}
+
+.pricing-header .btn {
+    min-width: 132px;
+    height: 48px;
+    padding-inline: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.pricing-page.listing-page {
+    width: min(1185px, calc(100% - 64px));
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 30px;
+    margin-top: 2.25rem;
+}
+
+.pricing-page {
+    align-items: start;
+}
+
+.pricing-page .status-sidebar {
+    min-height: 0;
+    padding: 20px 14px;
+}
+
+.pricing-page .status-sidebar h2 {
+    margin-bottom: 1rem;
+    font-size: 1.45rem;
+}
+
+.pricing-page .status-badge {
+    min-height: 3.25rem;
+    padding-inline: 1rem;
+    font-size: .9rem;
+}
+
+.pricing-page .status-badge img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.pricing-page .support-illustration {
+    min-height: 205px;
+    margin: 1rem 0;
+}
+
+.pricing-page .support-illustration img {
+    width: min(155px, 100%);
+}
+
+.pricing-page .help-card {
+    padding: 1rem .9rem;
+}
+
+.pricing-page .help-card h3 {
+    margin-bottom: .75rem;
+    font-size: .95rem;
+}
+
+.pricing-page .help-card p {
+    font-size: .85rem;
+}
+
+.pricing-page .contact-row {
+    gap: .55rem;
+    font-size: .85rem;
+}
+
+.pricing-page .contact-row img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.pricing-page .contact-details {
+    font-size: .72rem;
+}
+
+.pricing-page .chat-button {
+    min-height: 38px;
+    font-size: .8rem;
+}
+
+.pricing-page .page-heading h1 {
+    margin-bottom: .45rem;
+    font-size: 1.85rem;
+    line-height: 1.2;
+}
+
+.pricing-page .page-heading p {
+    font-size: 1rem;
+}
+
+.pricing-page .listing-progress {
+    margin-bottom: 2.4rem;
+}
+
+.pricing-page .step-count {
+    margin-bottom: 1.1rem;
+    font-size: 1rem;
+}
+
+.pricing-page .progress-track::before,
+.pricing-page .progress-line {
+    top: 1.05rem;
+}
+
+.pricing-page .step-number {
+    width: 2.15rem;
+    height: 2.15rem;
+    font-size: 1rem;
+}
+
+.pricing-page .step-label {
+    margin-top: .55rem;
+    font-size: 1rem;
+}
+
+.pricing-page .progress-step.completed .step-number,
+.pricing-page .progress-step.active .step-number {
+    background: #f79554;
+    color: #fff;
+}
+
+.pricing-page .progress-step.completed .step-label,
+.pricing-page .progress-step.active .step-label {
+    color: #f5792e;
+    font-weight: 700;
+}
+
+.pricing-section {
+    min-width: 0;
+    margin: 0 0 1.75rem;
+    padding: 0;
+    border: 0;
+}
+
+.pricing-section h2,
+.booking-section legend {
+    display: block;
+    margin: 0 0 .3rem;
+    color: #2e3432;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.section-intro {
+    margin: 0 0 .8rem;
+    color: #717573;
+    font-size: .9rem;
+}
+
+.pricing-form-content {
+    width: min(100%, 365px);
+}
+
+.rate-toggle {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #deded9;
+    border-radius: 8px;
+    background: #f6f6f3;
+}
+
+.rate-toggle button {
+    min-height: 42px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #555;
+}
+
+.rate-toggle button[aria-pressed="true"] {
+    background: #fff;
+    color: #126c60;
+    box-shadow: 0 1px 5px #0002;
+    font-weight: 700;
+}
+
+.price-field {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    width: 100%;
+    margin-top: .7rem;
+    min-height: 40px;
+    padding: .2rem .7rem;
+    border: 1px solid #d8dfdc;
+    border-radius: 7px;
+    background: #fff;
+    color: #126c60;
+}
+
+.price-field > span {
+    flex: 0 0 auto;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.price-field input {
+    width: 100%;
+    min-width: 0;
+    padding: .3rem 0;
+    border: 0;
+    outline: 0;
+    color: #252a28;
+    font-size: .95rem;
+    font-weight: 700;
+}
+
+.price-field input:focus-visible {
+    outline: 2px solid #126c60;
+    outline-offset: 1px;
+}
+
+.price-field strong {
+    flex: 0 0 auto;
+    color: #126c60;
+    font-size: .8rem;
+}
+
+.hours-field,
+.days-field {
+    min-width: 0;
+    margin: .95rem 0 0;
+    padding: 0;
+    border: 0;
+}
+
+.hours-field legend,
+.days-field legend {
+    margin-bottom: .45rem;
+    color: #353a38;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.time-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: .6rem;
+}
+
+.time-row label {
+    min-width: 0;
+}
+
+.time-row input,
+.blocked-controls input {
+    min-height: 40px;
+    width: 100%;
+    padding: .35rem .55rem;
+    border: 1px solid #d8dfdc;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+}
+
+.time-row > span {
+    color: #59615d;
+}
+
+.day-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.day-options label {
+    cursor: pointer;
+}
+
+.day-options input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.day-options span {
+    display: grid;
+    min-width: 43px;
+    min-height: 30px;
+    place-items: center;
+    padding: .2rem .3rem;
+    border: 1px solid #d8dfdc;
+    border-radius: 6px;
+    color: #4e5552;
+    background: #fff;
+    font-size: .8rem;
+}
+
+.day-options input:checked + span {
+    border-color: #187c6d;
+    color: #126c60;
+    background: #e9f5f1;
+    font-weight: 700;
+}
+
+.day-options input:focus-visible + span {
+    outline: 2px solid #f36b08;
+    outline-offset: 2px;
+}
+
+.booking-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: .8rem;
+}
+
+.booking-option {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+    min-width: 0;
+    min-height: 62px;
+    padding: .7rem .8rem;
+    border: 1px solid #d8dfdc;
+    border-radius: 7px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.booking-option:has(input:checked) {
+    border-color: #188273;
+    background: #f3faf7;
+}
+
+.booking-option input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.fake-radio {
+    flex: 0 0 19px;
+    width: 19px;
+    height: 19px;
+    margin-top: 2px;
+    border: 1px solid #76817c;
+    border-radius: 3px;
+}
+
+.booking-option input:checked + .fake-radio {
+    border-color: #15806f;
+    background: #15806f;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.booking-option input:focus-visible + .fake-radio {
+    outline: 2px solid #f36b08;
+    outline-offset: 2px;
+}
+
+.booking-option strong,
+.booking-option small {
+    display: block;
+}
+
+.booking-option strong {
+    color: #303633;
+    font-size: .95rem;
+}
+
+.booking-option small {
+    margin-top: .3rem;
+    color: #737975;
+    font-size: .82rem;
+    line-height: 1.4;
+}
+
+.blocked-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+}
+
+.blocked-controls input {
+    flex: 1 1 220px;
+}
+
+.blocked-controls button {
+    min-height: 40px;
+    padding: .35rem .8rem;
+    border: 1px solid #d8dfdc;
+    border-radius: 6px;
+    background: #f7f8f6;
+    color: #126c60;
+}
+
+.blocked-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: .65rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blocked-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    padding: .35rem .6rem;
+    border-radius: 20px;
+    background: #f2f4ef;
+    color: #424944;
+    font-size: .75rem;
+}
+
+.blocked-chip button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.pricing-error {
+    min-height: 1.15rem;
+    margin: .25rem 0 0;
+    color: #a53723;
+    font-size: .8rem;
+}
+
+.form-message {
+    margin: 0 0 .5rem;
+    color: #a53723;
+    font-size: .85rem;
+}
+
+.pricing-page .form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.pricing-page button:focus-visible,
+.pricing-page input:focus-visible {
+    outline: 2px solid #f36b08;
+    outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    .pricing-header .header-inner {
+        width: min(calc(100% - 32px), 1180px);
+    }
+
+    .pricing-header .main-nav {
+        gap: 1rem;
+    }
+
+    .pricing-header .btn {
+        min-width: 112px;
+        padding-inline: 14px;
+    }
+
+    .pricing-page.listing-page {
+        width: calc(100% - 48px);
+        grid-template-columns: 230px minmax(0, 1fr);
+        gap: 1.5rem;
+    }
+
+    .pricing-page .listing-progress {
+        margin-bottom: 1.5rem;
+    }
+
+    .day-options {
+        gap: .5rem;
+    }
+
+    .day-options span {
+        min-width: 52px;
+    }
+}
+
+@media (max-width: 700px) {
+    .pricing-header {
+        padding-top: 10px;
+    }
+
+    body:has(> .pricing-header) {
+        --listing-header-height: 60px;
+    }
+
+    .pricing-header .header-inner {
+        width: calc(100% - 24px);
+        min-height: 50px;
+        gap: 1rem;
+    }
+
+    .pricing-header .main-nav {
+        display: none;
+    }
+
+    .pricing-header .header-actions {
+        gap: 5px;
+    }
+
+    .pricing-header .btn {
+        min-width: auto;
+        height: 38px;
+        padding-inline: 12px;
+        font-size: 12px;
+    }
+
+    .pricing-page.listing-page {
+        width: min(94%, 560px);
+        margin-top: 1.25rem;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+    }
+
+    .pricing-page .status-sidebar {
+        padding: 1rem;
+    }
+
+    .pricing-page .support-illustration {
+        min-height: 0;
+        margin: 1rem 0;
+    }
+
+    .pricing-page .support-illustration img {
+        width: min(145px, 42vw, 100%);
+    }
+
+    .pricing-page .step-number {
+        width: 1.9rem;
+        height: 1.9rem;
+        font-size: .9rem;
+    }
+
+    .pricing-page .progress-track::before,
+    .pricing-page .progress-line {
+        top: .95rem;
+    }
+
+    .pricing-page .step-label {
+        font-size: .72rem;
+        white-space: normal;
+    }
+
+    .pricing-page .help-card {
+        margin-top: 1rem;
+    }
+
+    .pricing-page .listing-progress {
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .booking-options {
+        grid-template-columns: 1fr;
+    }
+
+    .blocked-controls {
+        align-items: stretch;
+    }
+
+    .blocked-controls input {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .pricing-header .header-inner {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-bottom: 8px;
+    }
+
+    .pricing-header .brand-name {
+        font-size: 12px;
+    }
+
+    .pricing-header .header-actions .btn:first-child {
+        display: none;
+    }
+
+    .pricing-page .page-heading h1 {
+        font-size: 1.35rem;
+    }
+
+    .time-row {
+        grid-template-columns: minmax(0, 1fr);
+        align-items: stretch;
+        gap: .4rem;
+    }
+
+    .time-row label {
+        flex-basis: auto;
+    }
+
+    .time-row > span {
+        align-self: flex-start;
+    }
+
+    .pricing-page .step-number {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: .85rem;
+    }
+
+    .pricing-page .progress-track::before,
+    .pricing-page .progress-line {
+        top: .875rem;
+    }
+
+    .pricing-page .step-label {
+        font-size: .6rem;
+    }
+
+    .price-field {
+        gap: .45rem;
+    }
+
+}

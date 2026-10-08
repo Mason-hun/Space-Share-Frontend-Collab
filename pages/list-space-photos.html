@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Space | SpaceShare</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/features/list-space-details.css">
+    <link rel="stylesheet" href="../css/features/list-space-photos.css">
+</head>
+<body>
+    <header class="site-header listing-header">
+        <div class="header-inner">
+            <a href="../index.html" class="brand" aria-label="SpaceShare home">
+                <span class="brand-mark" aria-hidden="true">
+                    <span class="brand-square brand-square-dark"></span>
+                    <span class="brand-square brand-square-orange"></span>
+                </span>
+                <span class="brand-name">SpaceShare</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="#">Become a Host</a>
+                <a href="#">Explore Spaces</a>
+                <a href="#">How it works</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn btn-outline">Log In</a>
+                <a href="#" class="btn btn-primary">List Your Spaces</a>
+            </div>
+        </div>
+    </header>
+    <main class="listing-page photos-page">
+        <aside class="status-sidebar">
+            <h2>Status</h2>
+            <div class="status-badge"><span>40% Complete</span><img src="../assets/images/vectors/Vector-star.png" alt="" aria-hidden="true"></div>
+            <div class="support-illustration"><img src="../assets/images/image 85@3x.png" alt=""></div>
+            <section class="help-card" aria-labelledby="help-title">
+                <h3 id="help-title">Stuck and need help?</h3>
+                <p>Our team is ready to guide you every step of the way</p>
+                <div class="help-divider"></div>
+                <div class="contact-row"><img src="../assets/images/vectors/Vector-phone.png" alt="" aria-hidden="true"><strong>Call Us</strong></div>
+                <div class="contact-details"><a href="tel:+23412345678">+234 1234 5678</a><span>8AM - 6PM</span></div>
+                <div class="contact-row live-chat"><img src="../assets/images/vectors/Vector-chat.png" alt="" aria-hidden="true"><strong>Live Chat</strong></div>
+                <button type="button" class="chat-button" id="chat-button">Start Chat</button>
+            </section>
+        </aside>
+        <section class="listing-content" aria-labelledby="page-title">
+            <div class="page-heading">
+                <h1 id="page-title">Let your space do the talking</h1>
+                <p>Seekers can’t visit before they book. Clear photos build the trust that turns a scroll before booking.</p>
+            </div>
+            <section class="listing-progress" aria-label="Listing progress">
+                <p class="step-count">Step 3 of 5 :</p>
+                <div class="progress-track" aria-label="Step 3 of 5">
+                    <div class="progress-line"></div>
+                    <div class="progress-step completed"><span class="step-number">1</span><span class="step-label">Basics</span></div>
+                    <div class="progress-step completed"><span class="step-number">2</span><span class="step-label">Details</span></div>
+                    <div class="progress-step active" aria-current="step"><span class="step-number">3</span><span class="step-label">Photos</span></div>
+                    <div class="progress-step"><span class="step-number">4</span><span class="step-label">Pricing &amp; Availability</span></div>
+                    <div class="progress-step"><span class="step-number">5</span><span class="step-label">Review</span></div>
+                </div>
+            </section>
+            <form id="list-space-photos-form" novalidate>
+                <section class="photo-upload-section" aria-label="Space photos">
+                    <div class="cover-photo" id="cover-photo">
+                        <img class="cover-preview" id="cover-preview" alt="" hidden>
+                        <span class="cover-badge" id="cover-badge" hidden>Cover Photo</span>
+                        <button class="delete-cover" id="delete-cover" type="button" aria-label="Delete cover photo" title="Delete cover photo" disabled><span aria-hidden="true">▤</span></button>
+                        <label class="cover-empty" id="cover-empty" for="photo-input">
+                            <img src="../assets/images/vectors3/cover.png" alt="" aria-hidden="true">
+                        </label>
+                        <p class="cover-filename" id="cover-filename" hidden></p>
+                    </div>
+                    <div class="photo-grid" id="photo-grid" aria-label="Selected photos"></div>
+                    <p class="photo-guidance">Drag to reorder. Tap any photo to make it your cover</p>
+                    <label class="visually-hidden" for="photo-input">Choose JPG or PNG photos (maximum 12)</label>
+                    <input class="visually-hidden" id="photo-input" name="photos" type="file" accept="image/jpeg,image/png" multiple aria-describedby="photo-help photo-message">
+                    <p class="visually-hidden" id="photo-help">Select JPEG or PNG images at least 1200 pixels wide. You can select up to 12 photos.</p>
+                    <p class="photo-message" id="photo-message" role="status" aria-live="polite"></p>
+                </section>
+                <section class="shots-checklist" aria-labelledby="shots-title">
+                    <h2 id="shots-title">Shots that win bookings</h2>
+                    <ul>
+                        <li><button type="button" class="checklist-item is-checked" aria-pressed="true"><span class="checkmark" aria-hidden="true">✓</span><span>The main space, in day light</span></button></li>
+                        <li><button type="button" class="checklist-item is-checked" aria-pressed="true"><span class="checkmark" aria-hidden="true">✓</span><span>Your gear and equipment</span></button></li>
+                        <li><button type="button" class="checklist-item" aria-pressed="false"><span class="checkmark" aria-hidden="true"></span><span>The entrance and how guests arrive</span></button></li>
+                        <li><button type="button" class="checklist-item" aria-pressed="false"><span class="checkmark" aria-hidden="true"></span><span>Restroom and changing area</span></button></li>
+                    </ul>
+                </section>
+                <div class="form-actions">
+                    <button type="button" class="back-button" id="back-button"><span aria-hidden="true">←</span>Back</button>
+                    <button type="submit" class="continue-button">Save &amp; Continue</button>
+                </div>
+                <p class="save-message" id="save-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <script src="../js/features/list-space-photos.js"></script>
+</body>
+</html>

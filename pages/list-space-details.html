@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>List Your Space | SpaceShare</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/features/list-space-details.css">
+</head>
+
+<body>
+
+
+    <header class="site-header listing-header">
+        <div class="header-inner">
+            <a href="../index.html" class="brand" aria-label="SpaceShare home">
+                <span class="brand-mark" aria-hidden="true">
+                    <span class="brand-square brand-square-dark"></span>
+                    <span class="brand-square brand-square-orange"></span>
+                </span>
+                <span class="brand-name">SpaceShare</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="#">Become a Host</a>
+                <a href="#">Explore Spaces</a>
+                <a href="#">How it works</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn btn-outline">Log In</a>
+                <a href="#" class="btn btn-primary">List Your Spaces</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="listing-page">
+
+
+
+        <aside class="status-sidebar">
+
+            <h2>
+                Status
+            </h2>
+
+
+            <div class="status-badge">
+
+                <span>
+                    20% Complete
+                </span>
+
+                <img
+                    src="../assets/images/vectors/Vector-star.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div class="support-illustration">
+
+                <img
+                    src="../assets/images/image 85@3x.png"
+                    alt="Customer support illustration"
+                >
+
+            </div>
+
+
+            <div class="help-card">
+
+                <h3>
+                    Stuck and need help?
+                </h3>
+
+                <p>
+                    Our team is ready to guide you
+                    every step of the way
+                </p>
+
+
+                <div class="help-divider"></div>
+
+
+                <div class="contact-row">
+
+                    <img
+                        src="../assets/images/vectors/Vector-phone.png"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <strong>
+                        Call Us
+                    </strong>
+
+                </div>
+
+
+                <div class="contact-details">
+
+                    <a href="tel:+23412345678">
+                        +234 1234 5678
+                    </a>
+
+                    <span>
+                        8AM - 6PM
+                    </span>
+
+                </div>
+
+
+                <div class="contact-row live-chat">
+
+                    <img
+                        src="../assets/images/vectors/Vector-chat.png"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <strong>
+                        Live Chat
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="chat-button"
+                    id="chat-button"
+                >
+                    Start Chat
+                </button>
+
+            </div>
+
+        </aside>
+
+
+
+        <section class="listing-content">
+
+
+
+            <div class="page-heading">
+
+                <h1>
+                    Where is it? And what is inside?
+                </h1>
+
+                <p>
+                    Renters filter by location and amenities.
+                    The more accurate this is, the better your bookings.
+                </p>
+
+            </div>
+
+
+
+            <div class="listing-progress">
+
+                <p class="step-count">
+                    Step 2 of 5 :
+                </p>
+
+
+                <div class="progress-track">
+
+                    <div class="progress-line"></div>
+
+
+                    <div class="progress-step completed">
+
+                        <span class="step-number">
+                            1
+                        </span>
+
+                        <span class="step-label">
+                            Basics
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-step active">
+
+                        <span class="step-number">
+                            2
+                        </span>
+
+                        <span class="step-label">
+                            Details
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-step">
+
+                        <span class="step-number">
+                            3
+                        </span>
+
+                        <span class="step-label">
+                            Photos
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-step">
+
+                        <span class="step-number">
+                            4
+                        </span>
+
+                        <span class="step-label">
+                            Pricing &amp; Availability
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-step">
+
+                        <span class="step-number">
+                            5
+                        </span>
+
+                        <span class="step-label">
+                            Review
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form id="list-space-details-form">
+
+
+
+                <fieldset class="form-group listing-form-group">
+
+                    <legend>
+                        Location
+                    </legend>
+
+                    <p class="field-description">
+                        Your exact address stays private until until a booking is confirmed
+                    </p>
+
+
+
+                    <div class="input-with-icon">
+
+                        <label
+                            for="space-address"
+                            class="visually-hidden"
+                        >
+                            Street address
+                        </label>
+
+                        <span
+                            class="input-icon"
+                            aria-hidden="true"
+                        >
+                            <img
+                                src="../assets/images/vectors2/location.png"
+                                alt=""
+                            >
+                        </span>
+
+                        <input
+                            type="text"
+                            id="space-address"
+                            name="spaceAddress"
+                            placeholder="E.g 14 Marina Close, GRA Ikeja"
+                            autocomplete="street-address"
+                            aria-describedby="space-address-error"
+                        >
+
+                    </div>
+
+                    <p id="space-address-error" class="form-error" aria-live="polite" hidden></p>
+
+
+                    <div class="select-wrapper">
+
+                        <label
+                            for="space-city"
+                            class="visually-hidden"
+                        >
+                            City
+                        </label>
+
+                        <select
+                            id="space-city"
+                            name="spaceCity"
+                            aria-describedby="space-city-error"
+                        >
+                            <option value="">
+                                Select city
+                            </option>
+
+                            <option value="lagos">
+                                Lagos
+                            </option>
+
+                            <option value="abuja">
+                                Abuja
+                            </option>
+
+                            <option value="port-harcourt">
+                                Port Harcourt
+                            </option>
+
+                            <option value="ibadan">
+                                Ibadan
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <p id="space-city-error" class="form-error" aria-live="polite" hidden></p>
+
+                </fieldset>
+
+
+
+
+                <fieldset class="form-group capacity-group">
+
+                    <legend>
+                        Capacity
+                    </legend>
+
+                    <p class="field-description">
+                        How many people fit comfortably?
+                    </p>
+
+
+                    <div class="capacity-control">
+
+
+                        <div class="capacity-counter">
+
+                            <button
+                                type="button"
+                                id="capacity-decrease"
+                                class="capacity-button"
+                                aria-label="Decrease capacity"
+                            >
+                                −
+                            </button>
+
+
+                            <output
+                                id="capacity-value"
+                                class="capacity-value"
+                                for="capacity-decrease capacity-increase"
+                            >
+                                55
+                            </output>
+
+
+                            <button
+                                type="button"
+                                id="capacity-increase"
+                                class="capacity-button"
+                                aria-label="Increase capacity"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+
+                        <span class="capacity-label">
+                            People, Maximum
+                        </span>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <fieldset class="form-group amenities-group">
+
+                    <legend>
+                        Amenities
+                    </legend>
+
+                    <p class="field-description">
+                        What comes with the space?
+                    </p>
+
+
+                    <div class="amenities-grid">
+
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="natural-light"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/Vector-sunlight.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Natural light
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="backup-power"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/Vector-bulb.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Backup power
+                            </span>
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="wheelchair-access"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/Vector-wheel-chair.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Wheelchair access
+                            </span>
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="air-conditioning"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/Vector-air-conditioning.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Air conditioning
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="wifi"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/circum_wifi-on.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Wi-Fi
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="parking"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/parking.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Parking Space
+                            </span>
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="changing-room"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/room.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Changing room
+                            </span>
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="restroom"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/restroom.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Restroom
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="sound-system"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/sound.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Sound System
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="amenity-option"
+                            data-amenity="tv-projector"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="../assets/images/vectors2/projector.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Tv / Projector
+                            </span>
+                        </button>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <fieldset class="form-group equipment-group">
+
+                    <legend>
+                        Equipments Included
+                    </legend>
+
+                    <p class="field-description">
+                        Equipment available for use
+                    </p>
+
+
+                    <div class="equipment-list">
+
+
+                        <button
+                            type="button"
+                            class="equipment-option"
+                            data-equipment="microphones"
+                            aria-pressed="false"
+                        >
+                            <span>
+                                Microphones
+                            </span>
+
+                            <span
+                                class="selection-box"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="equipment-option"
+                            data-equipment="backdrops"
+                            aria-pressed="false"
+                        >
+                            <span>
+                                Backdrops
+                            </span>
+
+                            <span
+                                class="selection-box"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="equipment-option"
+                            data-equipment="props"
+                            aria-pressed="false"
+                        >
+                            <span>
+                                Props
+                            </span>
+
+                            <span
+                                class="selection-box"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="equipment-option"
+                            data-equipment="studio-lights"
+                            aria-pressed="false"
+                        >
+                            <span>
+                                Studio Lights
+                            </span>
+
+                            <span
+                                class="selection-box"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="equipment-option"
+                            data-equipment="none"
+                            aria-pressed="false"
+                        >
+                            <span>
+                                No equipment
+                            </span>
+
+                            <span
+                                class="selection-box"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
+
+                    </div>
+
+                </fieldset>
+
+
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="back-button"
+                        id="back-button"
+                    >
+                        <span aria-hidden="true">
+                            ←
+                        </span>
+
+                        Back
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="continue-button"
+                    >
+                        Save &amp; Continue
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="../js/features/list-space-details.js"></script>
+
+</body>
+
+</html>

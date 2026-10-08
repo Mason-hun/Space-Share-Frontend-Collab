@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9f9fb;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  text-align: center;
+  width: 90%;
+  max-width: 750px;
+  padding: 50px 0;
+}
+
+image {
+  width: 120px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  letter-spacing: -1%;
+  font-size: 64px;
+  color: #103b3d;
+}
+
+.description-text, a, .copyright {
+  font-family: "Manrope", sans-serif;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1E2526;
+}
+
+small {
+  font-size: 16px;
+  color: #5C6466;
+}
+
+.button a {
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #E76209;
+  font-size: 16px;
+  color: #FFFFFF;
+  box-shadow: inset 2px 4px 4px rgba(3, 35, 20, 0.3), 0 4px 12px rgba(255, 141, 40, 0.5);;
+}
+
+.copyright {
+ position: fixed;
+ bottom: 70px;
+ text-align: center;
+ color: #5C6466;
+ font-size: 14px;
+}
+
+@media (max-width: 600px){
+  main {
+    gap: 38px;
+  }
+
+  image {
+    width: 110px;
+  }
+
+  h1 {
+    font-size: 54px;
+  }
+
+  .copyright {
+    bottom: 40px;
+  }
+}

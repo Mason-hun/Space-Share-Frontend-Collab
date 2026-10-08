@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Your Listing | SpaceShare</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/features/list-space-review.css">
+</head>
+<body>
+    <header class="site-header listing-header">
+        <div class="header-inner">
+            <a href="../index.html" class="brand" aria-label="SpaceShare home">
+                <span class="brand-mark" aria-hidden="true"><span class="brand-square brand-square-dark"></span><span class="brand-square brand-square-orange"></span></span>
+                <span class="brand-name">SpaceShare</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a><a href="#">Become a Host</a><a href="#">Explore Spaces</a><a href="#">How it works</a>
+            </nav>
+            <div class="header-actions"><a href="#" class="btn btn-outline">Log In</a><a href="#" class="btn btn-primary">List Your Spaces</a></div>
+        </div>
+    </header>
+
+    <main class="listing-page review-page">
+        <aside class="status-sidebar" aria-label="Listing status and support">
+            <h2>Status</h2>
+            <div class="status-badge"><span>100% Complete</span><img src="../assets/images/vectors/Vector-star.png" alt="" aria-hidden="true"></div>
+            <div class="support-illustration"><img src="../assets/images/image 85@3x.png" alt="Support team illustration"></div>
+            <section class="help-card" aria-labelledby="help-title">
+                <h3 id="help-title">Stuck and need help?</h3>
+                <p>Our team is ready to guide you every step of the way</p>
+                <div class="help-divider"></div>
+                <div class="contact-row"><img src="../assets/images/vectors/Vector-phone.png" alt="" aria-hidden="true"><strong>Call Us</strong></div>
+                <div class="contact-details"><a href="tel:+23412345678">+234 1234 5678</a><span>8AM - 6PM</span></div>
+                <div class="contact-row live-chat"><img src="../assets/images/vectors/Vector-chat.png" alt="" aria-hidden="true"><strong>Live Chat</strong></div>
+                <button type="button" class="chat-button" id="chat-button">Start Chat</button>
+            </section>
+        </aside>
+
+        <section class="listing-content" aria-labelledby="page-title">
+            <div class="page-heading">
+                <h1 id="page-title">One last look before you go live.</h1>
+                <p>Review your details before you publish. You can still edit after publishing. Just tap any section to make changes.</p>
+            </div>
+
+            <section class="listing-progress" aria-label="Listing progress">
+                <p class="step-count">Step 5 of 5</p>
+                <div class="progress-track" role="list" aria-label="Step 5 of 5">
+                    <div class="progress-line" aria-hidden="true"></div>
+                    <div class="progress-step completed" role="listitem"><span class="step-number">1</span><span class="step-label">Basics</span></div>
+                    <div class="progress-step completed" role="listitem"><span class="step-number">2</span><span class="step-label">Details</span></div>
+                    <div class="progress-step completed" role="listitem"><span class="step-number">3</span><span class="step-label">Photos</span></div>
+                    <div class="progress-step completed" role="listitem"><span class="step-number">4</span><span class="step-label">Pricing &amp; Availability</span></div>
+                    <div class="progress-step active" role="listitem" aria-current="step"><span class="step-number">5</span><span class="step-label">Review</span></div>
+                </div>
+            </section>
+
+            <div class="review-stack">
+                <section class="review-preview" aria-label="Renter listing preview">
+                    <img class="review-preview-image" src="../assets/images/page5-images/page5-img.png" alt="Workspace preview shown to renters">
+                    <h2 class="review-preview-title" data-review="spaceName">Not provided</h2>
+                    <p class="review-preview-location"><span class="location-pin" aria-hidden="true">⌖</span><span data-review="location">Not provided</span></p>
+                </section>
+
+                <section class="review-card" aria-labelledby="basics-title">
+                    <div class="review-card-heading"><h2 id="basics-title">Basics</h2><a class="edit-link" href="./list-space-basics.html">✎ Edit</a></div>
+                    <dl class="review-fields">
+                        <div><dt>Name</dt><dd data-review="spaceName">Not provided</dd></div>
+                        <div><dt>Category</dt><dd data-review="category">Not provided</dd></div>
+                        <div><dt>Activities</dt><dd data-review="activities">Not provided</dd></div>
+                        <div><dt>Description</dt><dd data-review="description">Not provided</dd></div>
+                    </dl>
+                </section>
+
+                <section class="review-card" aria-labelledby="details-title">
+                    <div class="review-card-heading"><h2 id="details-title">Details</h2><a class="edit-link" href="./list-space-details.html">✎ Edit</a></div>
+                    <dl class="review-fields">
+                        <div><dt>Location</dt><dd data-review="location">Not provided</dd></div>
+                        <div><dt>Capacity</dt><dd data-review="capacity">Not provided</dd></div>
+                        <div><dt>Amenities</dt><dd data-review="amenities">Not provided</dd></div>
+                        <div><dt>Equipment</dt><dd data-review="equipment">Not provided</dd></div>
+                    </dl>
+                </section>
+
+                <section class="review-card photos-review" aria-labelledby="photos-title">
+                    <div class="review-card-heading"><div class="photos-heading"><h2 id="photos-title">Photos</h2><span class="photo-count">03 Added</span></div><a class="edit-link" href="./list-space-photos.html">✎ Edit</a></div>
+                    <div class="review-thumbnails" aria-label="Example listing photos">
+                        <img src="../assets/images/page5-images/image1.png" alt="Example interior photo">
+                        <img src="../assets/images/page5-images/image2.png" alt="Example interior photo">
+                        <img src="../assets/images/page5-images/image3.png" alt="Example interior photo">
+                    </div>
+                    <p class="photo-tip">Tip: 5+ photos get about 3x more booking request</p>
+                </section>
+
+                <section class="review-card" aria-labelledby="pricing-title">
+                    <div class="review-card-heading"><h2 id="pricing-title">Pricing and Availability</h2><a class="edit-link" href="./list-space-pricing.html">✎ Edit</a></div>
+                    <dl class="review-fields">
+                        <div><dt>Rate</dt><dd data-review="rate">Not provided</dd></div>
+                        <div><dt>Open Days</dt><dd data-review="days">Not provided</dd></div>
+                        <div><dt>Hours</dt><dd data-review="hours">Not provided</dd></div>
+                        <div><dt>Blocked Dates</dt><dd data-review="blockedDates">Not provided</dd></div>
+                    </dl>
+                </section>
+
+                <form class="review-confirmation" id="review-form" novalidate>
+                    <label for="confirm-listing"><input id="confirm-listing" name="confirm-listing" type="checkbox"><span>I confirm this information is accurate and I agree to Space Share's <span class="policy-text">Host Terms</span> and <span class="policy-text">Service Standards</span></span></label>
+                    <p class="review-message" id="review-message" role="status" aria-live="polite"></p>
+                    <div class="review-actions">
+                        <a class="back-button" href="./list-space-pricing.html"><span aria-hidden="true">←</span> Back</a>
+                        <button class="publish-button" type="submit">Publish Listing</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <dialog class="publish-success-dialog" id="publish-success-dialog" aria-labelledby="publish-success-title" aria-describedby="publish-success-description">
+        <div class="publish-success-content">
+            <header class="publish-success-header">
+                <img class="publish-success-confetti" src="../assets/images/page6-images/confetti.png" alt="">
+                <h2 id="publish-success-title" class="publish-success-title" tabindex="-1">Listing Submitted Successfully</h2>
+                <p id="publish-success-description" class="publish-success-description">We have received your listing for <span id="publish-success-space-name">your listing</span>. Our team is checking it to make sure it is ready for space seekers. You will be notified as soon as it is approved.</p>
+            </header>
+            <section class="publish-processing" aria-label="Processing time">
+                <img src="../assets/images/page6-images/time.png" alt="">
+                <span>This usually takes</span>
+                <strong>24 to 48 hours</strong>
+            </section>
+            <div class="publish-success-actions" role="group" aria-label="Listing actions">
+                <button type="button" class="publish-action publish-action-outline" disabled>View my Listing</button>
+                <button type="button" class="publish-action publish-action-primary" disabled>Go to Dashboard</button>
+            </div>
+            <section class="publish-next-steps" aria-labelledby="publish-next-title">
+                <h3 id="publish-next-title">What happens Next?</h3>
+                <div class="publish-next-cards">
+                    <article class="publish-next-card"><img src="../assets/images/page6-images/reviewer.png" alt=""><p>We review your details and photos</p></article>
+                    <article class="publish-next-card"><img src="../assets/images/page6-images/mail.png" alt=""><p>You get a notification with the result</p></article>
+                    <article class="publish-next-card"><img src="../assets/images/page6-images/live.png" alt=""><p>Once approved, your space goes live</p></article>
+                </div>
+            </section>
+            <section class="publish-support" aria-labelledby="publish-support-title">
+                <img class="publish-support-chat-icon" src="../assets/images/page6-images/greenchat.png" alt="">
+                <div class="publish-support-copy">
+                    <h3 id="publish-support-title">Need immediate assistance?</h3>
+                    <p>Our support team is here to help you with any questions.</p>
+                </div>
+                <div class="publish-support-actions">
+                    <button type="button" class="publish-support-chat" id="publish-support-chat"><span>Chat with us</span><img src="../assets/images/vectors/Vector-chat.png" alt=""></button>
+                    <a class="publish-support-call" href="tel:+23412345678"><span>Call Support</span><img src="../assets/images/vectors/Vector-phone.png" alt=""></a>
+                </div>
+            </section>
+            <p class="publish-support-message" id="publish-support-message" role="status" aria-live="polite"></p>
+        </div>
+    </dialog>
+    <script src="../js/features/list-space-review.js"></script>
+</body>
+</html>
